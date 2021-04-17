@@ -1,0 +1,129 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* dx os elementos no tamanho certo */
+    box-sizing: border-box;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--preta);
+    padding: 20px;
+    /* justifica os elementos */
+     justify-content: space-between; */
+}
+
+body{
+background-color: var(--preta);
+font-family: 'Times New Roman', Times, serif;
+color: white;
+
+
+}
+.logo{
+    color: var(--vermelho);
+    font-size: 40px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    
+}
+nav a:hover{
+    color: #AAA;
+}
+video{
+    
+z-index: -1000;
+position: absolute;
+
+}
+/* filme principal*/
+.filme_principal {
+    
+
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
+    background-position: center;
+    height: 700Px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.filme_principal .container{
+    margin-left: 30px;
+    width: 50%;
+    position: absolute;
+}
+
+.filme_principal .container h3{
+   font-size: 50px;
+   margin-bottom: 10px;
+}
+.filme_principal .container p{
+   font-size: 20px;
+   
+}
+
+
+.container{
+    margin-left: 30px;
+
+}
+
+.filme_principal .container .bottoes{
+
+    margin-top: 30px;
+}
+button{
+padding: 0.8rem;
+background-color: white;
+
+}
+button:hover{
+    background-color: rgb(236, 233, 233);
+
+}
+button:nth-child(2){
+    color: white;
+
+    background-color: rgba(141, 133, 133, 0.74);
+}
+button:nth-child(2):hover{
+    background-color: rgba(141, 133, 133, 0.315);
+
+}
+
+
+@media screen and (max-width:700px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+    
+        /* justifica os elementos */
+         /* justify-content: space-between; */
+    }
+
+    button{
+        margin-top: 10px;
+        width: 150px;
+        }
+}
+
+
+.carouseu_filmes{
+
+    margin-top: 20px;
+}
